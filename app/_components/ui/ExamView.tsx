@@ -218,7 +218,13 @@ function ExamView() {
                       className="appearance-none w-[20px] h-[20px] border-2 border-[#3e54b5] rounded-sm cursor-pointer relative before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-[10px] before:h-[10px] before:bg-white before:rounded-sm before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:scale-0 checked:before:scale-100 before:transition-transform checked:border-white"
                     />
                     <span className="h-full">
-                      {examData[currentIdx][`answer_${num}`].answerTitle}
+                      {
+                        (
+                          examData[currentIdx][
+                            `answer_${num}` as keyof Exam
+                          ] as any
+                        ).answerTitle
+                      }
                     </span>
                   </label>
                 ))}
