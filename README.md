@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+###Project for IT Legend — Next.js Website
 
-## Getting Started
+I developed a full-stack web application for IT Legend as part of a technical skills demonstration, leveraging the Next.js framework with a strong emphasis on best practices and clean architecture.
 
-First, run the development server:
+Key highlights of the project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Utilized client components for dynamic, interactive user interfaces.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Implemented server components to efficiently manage metadata and server-side logic.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Employed React Context API (useContext) along with useState for scalable and maintainable state management across the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Made extensive and effective use of useEffect for side effects and lifecycle control.
 
-## Learn More
+Designed and built three custom popups to enhance user interactions and experience.
 
-To learn more about Next.js, take a look at the following resources:
+Structured the project with a well-organized and scalable folder architecture, ensuring ease of maintenance and future development.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Developed a dedicated API route to handle feedback form submissions, connecting to a MongoDB database securely.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Styled the entire application using Tailwind CSS, achieving a modern, responsive, and highly customizable UI.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project demonstrates my ability to build real-world, production-ready applications using modern Next.js features, manage both frontend and backend concerns, and create a smooth user experience with strong attention to performance and code quality.
