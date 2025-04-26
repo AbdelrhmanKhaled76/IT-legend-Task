@@ -1,4 +1,4 @@
-###Project for IT Legend — Next.js Website
+Project for IT Legend — Next.js Website
 
 I developed a full-stack web application for IT Legend as part of a technical skills demonstration, leveraging the Next.js framework with a strong emphasis on best practices and clean architecture.
 
