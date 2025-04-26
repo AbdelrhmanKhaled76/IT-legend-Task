@@ -33,8 +33,7 @@ export async function POST(req: Request) {
       }
     );
   }
-
-  let client: MongoClient;
+  let client: MongoClient | null = null;
 
   try {
     const body = await req.json();
