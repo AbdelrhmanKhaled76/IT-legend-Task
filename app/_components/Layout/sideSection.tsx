@@ -165,11 +165,6 @@ const SideSection = ({}: {}) => {
             <button
               title="toggle section"
               type="button"
-              aria-controls={`section-${section.id}`}
-              aria-expanded={!!openSections?.[section.id]}
-              aria-label={`${
-                openSections?.[section.id] ? "Collapse" : "Expand"
-              } ${section.title}`}
               onClick={() => toggleSection(section.id)}
               className="cursor-pointer"
             >

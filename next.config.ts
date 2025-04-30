@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  compress: true,
   swcMinify: true,
-  productionBrowserSourceMaps: false,
+  productionBrowserSourceMaps: true,
   images: {
     remotePatterns: [
       {
