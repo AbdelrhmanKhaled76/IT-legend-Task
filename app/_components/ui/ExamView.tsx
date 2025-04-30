@@ -1,7 +1,7 @@
 "use client";
 import { faChevronLeft, faStopwatch } from "@fortawesome/free-solid-svg-icons";
 import { Exam } from "../../_interfaces/Exam";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useViewExam } from "@/app/_providers/examViewContext";
 
@@ -259,4 +259,4 @@ function ExamView() {
   );
 }
 
-export default ExamView;
+export default React.memo(ExamView);

@@ -1,14 +1,12 @@
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faHandFist } from "@fortawesome/free-solid-svg-icons/faHandFist";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import itLegendImage from "/public/images/IT LEGEND logo-02.png";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { useOverView } from "../../_providers/overViewContext";
 
 const OverView = () => {
   const { overView, setOverView } = useOverView();
-  const overViewClosing = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     document.body.style.overflow = overView ? "hidden" : "auto";
@@ -88,4 +86,4 @@ const OverView = () => {
   );
 };
 
-export default OverView;
+export default React.memo(OverView);

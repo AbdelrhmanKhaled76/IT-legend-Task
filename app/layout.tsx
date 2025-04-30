@@ -36,11 +36,11 @@ export default function RootLayout({
 }>) {
   const Navbar = dynamic(() => import("./_components/Layout/nav"), {
     ssr: true,
-    loading: () => <p>Loading ...</p>,
+    loading: () => <></>,
   });
   const Footer = dynamic(() => import("./_components/Layout/footer"), {
     ssr: true,
-    loading: () => <p>Loading ...</p>,
+    loading: () => <></>,
   });
   return (
     <html lang="en" className={`${inter.variable} ${spartan.variable}`}>

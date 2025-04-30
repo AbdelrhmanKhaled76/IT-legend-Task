@@ -1,5 +1,4 @@
 "use client";
-
 import { fontClasses } from "@/app/_interfaces/FontClasses";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

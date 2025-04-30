@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import lockIcon from "/public/images/locked-padlock-.png";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
@@ -118,7 +118,10 @@ const SideSection = ({}: {}) => {
   return (
     <aside className="px-5">
       <h2 className="text-[26px] font-medium">Topics for This Course</h2>
-      <div
+
+      {/* progress bar  */}
+
+      <section
         ref={progressBarRef}
         className="relative w-full h-2 bg-gray-200 rounded mt-16"
       >
@@ -148,7 +151,10 @@ const SideSection = ({}: {}) => {
             {courseProgress}%
           </span>
         </div>
-      </div>
+      </section>
+
+      {/* courses menu  */}
+
       {sections.map((section) => (
         <section
           key={section.id}
@@ -159,6 +165,11 @@ const SideSection = ({}: {}) => {
             <button
               title="toggle section"
               type="button"
+              aria-controls={`section-${section.id}`}
+              aria-expanded={!!openSections?.[section.id]}
+              aria-label={`${
+                openSections?.[section.id] ? "Collapse" : "Expand"
+              } ${section.title}`}
               onClick={() => toggleSection(section.id)}
               className="cursor-pointer"
             >
@@ -244,4 +255,4 @@ const SideSection = ({}: {}) => {
   );
 };
 
-export default SideSection;
+export default React.memo(SideSection);

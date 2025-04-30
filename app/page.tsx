@@ -32,12 +32,12 @@ export default function Home() {
   //lazy loading the overView
   const OverView = dynamic(() => import("./_components/ui/overView"), {
     ssr: false,
-    loading: () => <div>Loading...</div>,
+    loading: () => <></>,
   });
 
   const ExamView = dynamic(() => import("./_components/ui/ExamView"), {
     ssr: false,
-    loading: () => <div>Loading...</div>,
+    loading: () => <></>,
   });
 
   // making two variables one for playing the video with a button
